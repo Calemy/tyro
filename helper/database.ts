@@ -1,8 +1,9 @@
 import mysql from "mysql-commands"
+import config from "../config"
 
 export default mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "bancho"
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.database
 })
